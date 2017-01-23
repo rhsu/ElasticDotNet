@@ -5,7 +5,8 @@ namespace ElasticDotNet
 {
 	public class Tweet
 	{
-		public int Id { get; set; }
+		// public int Id { get; set; }
+		// public Guid Id { get; set; }
 		public string User { get; set; }
 		public DateTime PostDate { get; set; }
 		public string Message { get; set; }
@@ -23,8 +24,8 @@ namespace ElasticDotNet
 
 			var tweet = new Tweet
 			{
-				Id = 1,
-				User = "kimchy",
+				//Id = Guid.NewGuid(),
+				User = "kimchy 25",
 				PostDate = new DateTime(2009, 11, 15),
 				Message = "Trying out NEST, so far so good?"
 			};
