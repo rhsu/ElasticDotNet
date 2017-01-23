@@ -9,6 +9,8 @@ namespace ElasticDocNet
 		public static void Main(string[] args)
 		{
 			var client = new ElasticClient();
+			var response = client.ClusterHealth();
+			Console.WriteLine(response.Status);
 		}
 	}
 }
